@@ -139,6 +139,8 @@ cargo build --release
 
 ### Интерфейс
 
+![Uploading polivoks_ylkP3fIzwi.png…]()
+
 ```
 ┌─────────────────────────────────────────────────────────────────┐
 │ NEBROS RS  [AUDIO ●] [MIDI ●]        [Пресеты] [Сброс] [v1.3.0] │

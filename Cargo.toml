@@ -1,0 +1,35 @@
+[package]
+name = "nebros_rs"
+version = "0.1.1"
+edition = "2021"
+description = "Аналоговый синтезатор, ставящий перед собой задачу эмулирования эффектов старых советских синтезаторов"
+license = "MIT"
+
+[[bin]]
+name = "polivoks"
+path = "src/main.rs"
+required-features = ["gui"] 
+
+[lib]
+name = "nebros_rs"
+path = "src/lib.rs"
+crate-type = ["cdylib", "rlib"]
+
+[dependencies]
+rand = { version = "0.8", features = ["small_rng"] }
+parking_lot = "0.12"
+log = "0.4"
+
+cpal       = { version = "0.15", optional = true }
+env_logger = { version = "0.11", optional = true }
+eframe     = { version = "0.27", optional = true }
+egui       = { version = "0.27", optional = true }
+
+[features]
+default = ["gui"]
+gui    = ["dep:cpal", "dep:env_logger", "dep:eframe", "dep:egui"]
+module = [] 
+
+[profile.release]
+lto = "thin"
+strip = "symbols"

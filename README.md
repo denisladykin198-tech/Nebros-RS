@@ -139,7 +139,7 @@ cargo build --release
 
 ### Интерфейс
 
-![Uploading polivoks_ylkP3fIzwi.png…]()
+<img width="1102" height="1033" alt="polivoks_ylkP3fIzwi" src="https://github.com/user-attachments/assets/2d82aa99-a575-43d0-9d3a-2778a57a74da" />
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐
